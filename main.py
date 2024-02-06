@@ -12,3 +12,17 @@ def chocks():
 
 
     code = input('Enter Your Code: ')
+
+    for d, k in zip(d, k):
+
+        if code in m:
+            import tkinter
+            root = tkinter.Tk()
+            from tkinter import ttk
+            l1 = ttk.Label(text='already entered', style="BW.TLabel", font='bobo 100', background="red")
+            l1.pack()
+            root.maxsize(1000, 300)
+            root.minsize(1000, 300)
+            root.mainloop()
+
+            break
