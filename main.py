@@ -26,3 +26,14 @@ def chocks():
             root.mainloop()
 
             break
+
+ if code in d:
+            root = tkinter.Tk()
+            l1 = ttk.Label(text=k, style="BW.TLabel", font='bobo 70', background="green")
+            l1.pack()
+
+            root.maxsize(1000, 100)
+            root.minsize(1000, 100)
+            root.mainloop()
+            break
+
