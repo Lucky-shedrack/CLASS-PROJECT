@@ -48,3 +48,20 @@ def chocks():
 
             break
 
+       if code not in d:
+            root = tkinter.Tk()
+            l1 = ttk.Label(text='Not in existence', style="BW.TLabel", font='bobo 100', background="red")
+            l1.pack()
+            root.maxsize(1000, 200)
+            root.minsize(1000, 200)
+            root.mainloop()
+            break
+    m.append(code)
+
+
+while True:
+    chocks()
+
+
+
+
