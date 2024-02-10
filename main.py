@@ -1,7 +1,19 @@
 from tkinter import ttk
-import tkinter
+from tkinter import *
+
 
 m = []
+
+
+
+w = Tk()
+w.geometry('250x250')
+v= (Entry(w))
+v.pack()
+enter = Button(w, text='ENTER', command=lambda: chocks(v.get()))
+enter.pack()
+
+
 
 def chocks():
     d = [';','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','p','q','r',' s','t','u','v','w','x','y','z']
@@ -11,56 +23,66 @@ def chocks():
 
 
 
-    code = input('Enter Your Code: ')
+    
 
     for d, k in zip(d, k):
 
         if code in m:
-            import tkinter
-            root = tkinter.Tk()
-            from tkinter import ttk
-            l1 = ttk.Label(text='already entered', style="BW.TLabel", font='bobo 100', background="red")
+            
+            root = Tk()
+            
+            l1 = ttk.Label(root, text='already entered', style="BW.TLabel", font='bobo 100', background="red")
             l1.pack()
             root.maxsize(1000, 300)
             root.minsize(1000, 300)
-            root.mainloop()
+            
 
             break
+
+
 
  if code in d:
-            root = tkinter.Tk()
-            l1 = ttk.Label(text=k, style="BW.TLabel", font='bobo 70', background="green")
+            root = Tk()
+            l1 = ttk.Label(root, text=k, style="BW.TLabel", font='bobo 70', background="green")
             l1.pack()
 
             root.maxsize(1000, 100)
             root.minsize(1000, 100)
-            root.mainloop()
+            
+            
             break
 
-    for k, d in zip(k, d):
+
+
+ for k, d in zip(k, d):
         if code in m:
-            root = tkinter.Tk()
-            l1 = ttk.Label(text='already entered', style="BW.TLabel", font='bobo 70', background="red")
+            root = Tk()
+            l1 = ttk.Label(root, text='already entered', style="BW.TLabel", font='bobo 70', background="red")
             l1.pack()
             root.maxsize(1000, 100)
             root.minsize(1000, 100)
-            root.mainloop()
+            
 
             break
 
-       if code not in d:
-            root = tkinter.Tk()
-            l1 = ttk.Label(text='Not in existence', style="BW.TLabel", font='bobo 100', background="red")
+
+
+
+  if code not in d:
+            root = Tk()
+            l1 = ttk.Label(root, text='Not in existence', style="BW.TLabel", font='bobo 100', background="red")
             l1.pack()
             root.maxsize(1000, 200)
             root.minsize(1000, 200)
-            root.mainloop()
+            
             break
     m.append(code)
 
 
-while True:
-    chocks()
+
+w.mainloop()
+
+
 
 
 
